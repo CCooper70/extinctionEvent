@@ -1,29 +1,31 @@
-const firstList = document.querySelectorAll('.ol')
-for (let i = 0; i < firstList.length; i++){
-    firstList[i].addEventListener('click', ()=>{
-        firstList[i].style.textDecoration = "line-through"
+const strike = document.querySelectorAll(".ol")
+for(let i = 0;i < strike.length; i ++){
+    strike[i].addEventListener("click",()=>{
+        strike[i].style.textDecoration = "line-through"
     })
 }
-const secondList = document.querySelectorAll('.ul')
-for (let i = 0; i < secondList.length; i++){
-    secondList[i].addEventListener('click', ()=>{
-        secondList[i].style.opacity = "50%"
-    })
+const opaque = document.querySelectorAll(".ul")
+for(let i = 0; i < opaque.length; i++){
+    opaque[i].addEventListener("click",()=>{
+        opaque[i].style.opacity = "35%"
+    })    
 }
-const thirdList = document.querySelectorAll('.pic')
-for (let i = 0; i < thirdList.length; i++){
-    thirdList[i].addEventListener('click', ()=>{
-        thirdList[i].style.opacity = "50%"
-    })
+
+const image = document.querySelectorAll(".pic")
+
+for(let i = 0; i < image.length; i++){
+    image[i].addEventListener("click",()=>{
+        image[i].style.opacity = "15%"
+    })    
 }
-document.querySelector("#destroy-all").addEventListener('click', ()=>{
-    for(let i = 0; i < firstList.length; i++){
-        firstList[i].style.textDecoration = "line-through"
+document.querySelector("#destroy-all").addEventListener("click",()=>{
+    for(let i = 0; i < strike.length; i++){
+        strike[i].style.textDecoration = "line-through"
     }
-    for(let i = 0; i < secondList.length; i++){
-        secondList[i].style.opacity = "50%"
+    for(let i = 0;i < opaque.length;i++){
+        opaque[i].style.opacity = ".35%"
     }
-    for(let i = 0; i < thirdList.length; i++){
-        thirdList[i].style.opacity = "50%"
+    for(let i = 0;i < image.length; i++){
+        image[i].style.opacity = "15%"
     }
 })
